@@ -1,0 +1,10 @@
+# vManage Connectivity Info
+
+vmanage_host: vmanage-1666385.viptela.net
+vmanage_port: 8443
+vmanage_username: shreredd
+agentName: TE-AGENT-120
+
+# Central Policy name
+
+data_policy_name: Payment_Offices_Data_Policy
