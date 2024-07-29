@@ -261,9 +261,6 @@ Your Input : """)
                 for iterSubnet in agentTESubnetList:
                     iterSubnet = (iterSubnet.lstrip()).rstrip()
                     
-                    print(targetResponse['agents'][0]['ipAddresses'][0])
-                    print(ipaddress.ip_address(targetResponse['agents'][0]['ipAddresses'][0]) in ipaddress.ip_network(iterSubnet))
-                    
                     if ipaddress.ip_address(targetResponse['agents'][0]['ipAddresses'][0]) in ipaddress.ip_network(iterSubnet):
                         logging.info(f"********Target AgentTest ID {iterTest['targetAgentId']} -  Enterprise Agent - IP belongs to TEagent subnet ********")
                         flag = True
@@ -562,7 +559,7 @@ if __name__ == "__main__":
     
     if response == None:
         logging.info(f"***** new centrlized data policy created ******")
-        print("Successfully created the Data Policy")
+        print("\nSuccessfully created the Data Policy\n")
         
     else:
         logging.error(f"***** Error while creating a entrlized data policy {response}******")
